@@ -1,7 +1,7 @@
 import { API } from "../../backend";
 
 export const signup = user => {
-  return fetch(`http://localhost:8000/api/signup`, {
+  return fetch(`https://maskedstore.herokuapp.com/api/signup`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -16,7 +16,7 @@ export const signup = user => {
 };
 
 export const signin = user => {
-  return fetch("http://localhost:8000/api/signin", {
+  return fetch("https://maskedstore.herokuapp.com/api/signin", {
     method: "POST",
     headers: {
       Accept: "application/json",
